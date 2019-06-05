@@ -1,0 +1,11 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="configure">
+  <span *ngFor="let item of formsCanBeSelect" (click)="changeForm(item)">{{item}}</span>
+</div>
+<div class="app">
+  <app-dynamic-form #dynamicForm [configs]="formFieldConfigs" (submit)="onSubmit($event)">
+  </app-dynamic-form>
+</div>
+
+
+
